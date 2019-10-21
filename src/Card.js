@@ -16,4 +16,5 @@ export default function Card(props) {
 
 Card.propTypes = {
   img: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.node)
 }
