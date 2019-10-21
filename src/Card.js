@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Img = ({img}) => img ? <img src={img} className="card-img-top" alt="Card" /> : null;
 
@@ -11,4 +12,8 @@ export default function Card(props) {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  img: PropTypes.string,
 }
